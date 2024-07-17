@@ -4,7 +4,8 @@ def vsed(n):
         for d in range(2, int(n**0.5)):
             if n%d==0:
                 a.append(d)
-    if len(a)==1:
+                a.append(n//d)
+    if len(a)==2:
         return a[0]
     else:
         return 0
